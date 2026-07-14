@@ -3,7 +3,9 @@
     "start": "nodemon index.js"
   },
   "dependencies": {
-    "express": "^4.22.1"
+    "dotenv": "^17.4.2",
+    "express": "^4.22.1",
+    "form-data": "^4.0.6"
   },
   "devDependencies": {
     "nodemon": "^3.1.0"
