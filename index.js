@@ -42,23 +42,21 @@ const barcodeX = Math.round((560 - barcodeWidth) / 2);
 ^PW560
 ^LL400
 
-^FO20,20
+^FO20,25
 ^A0N,40,40
 ^FB520,1,0,C
 ^FD${req.body.name || ''}
 ^FS
 
 
-
-
 ^FO${barcodeX},80
 ^BY2,3,80
-^BCN,N,80,N,N
+^BCN,N,N,80,N,N
 ^FD${serial}
 ^FS
 
 
-^FO20,190
+^FO20,180
 ^A0N,30,30
 ^FB520,2,0,C
 ^FDUsed By: ${req.body.assigned_to || ''}^FS
