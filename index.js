@@ -18,18 +18,6 @@ app.get('/', (req, res) => {
 app.post('/print', async (req, res) => {
   try {
 
- if (req.body.usage_type==2){
-  res.status(200).send({ error: "Device has Usage Type set to Loaner- No label is Printed" })
-
- }
-
-
-
-
-
-
-
-
 
      const serial = req.body.serial_number || "";
     // const barcodeWidth = serial.length * 16;
