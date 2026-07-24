@@ -75,7 +75,8 @@ const barcodeX = Math.round((560 - barcodeWidth) / 2);
 ^A0N,20,20
 ^FB520,2,0,C
 ^FDLabel not to be removed^FS
-^PQ2
+${req.body.asset_type=="Mobile"?"^PQ3":"^PQ2"}
+^FX ^PQ2 disabled for testing
 ^XZ`;
 
 
@@ -102,8 +103,7 @@ formData.append('zpl_file', blob, 'label.zpl');
       method: 'POST',
       headers: {
         'tenant': process.env.TENANT,
-        'apikey': process.env.APIKEY,
-        //...formData.getHeaders() // Crucial: Automatically applies the correct bound headers
+        'apikey': process.env.APIKEY
       },
       body: formData
     });
