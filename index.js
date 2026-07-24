@@ -76,7 +76,6 @@ const barcodeX = Math.round((560 - barcodeWidth) / 2);
 ^FB520,2,0,C
 ^FDLabel not to be removed^FS
 ${req.body.asset_type=="Mobile"?"^PQ3":"^PQ2"}
-^FX ^PQ2 disabled for testing
 ^XZ`;
 
 
